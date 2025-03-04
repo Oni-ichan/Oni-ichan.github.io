@@ -1,11 +1,16 @@
-<!DOCTYPE html>
+```html
+ <!DOCTYPE html>
  <html lang="en">
+ 
+
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Funville Toys - Toys for Kids</title>
-  <meta name="description" content="Funville Toys: Discover a wide range of fun and educational toys for kids of all ages. Spark creativity and imagination with our high-quality toys.">
-  <meta name="keywords" content="toys, kids toys, educational toys, fun toys, children's toys, toy store, best toys, cheap toys, Funville Toys">
+  <meta name="description"
+  content="Funville Toys: Discover amazing toys for kids of all ages! Explore our wide selection of fun, educational, and safe toys.">
+  <meta name="keywords"
+  content="toys, kids toys, educational toys, fun toys, children's toys, best toys for kids, Funville Toys">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,21 +21,45 @@
   }
   </style>
  </head>
- <body class="bg-yellow-50">
+ 
+
+ <body class="bg-green-50">
  
 
   <!-- Navigation Bar -->
   <nav class="bg-white shadow-md">
   <div class="container mx-auto px-4 py-3 flex items-center justify-between">
-  <div class="text-2xl font-bold text-green-600">
+  <div class="flex items-center">
+  <a href="#" class="font-bold text-xl text-green-600">
+  <!-- Logo Placeholder -->
   Funville Toys
+  </a>
   </div>
-  <div class="space-x-6">
+  <div class="hidden md:flex space-x-6">
   <a href="#" class="text-gray-700 hover:text-green-500">Home</a>
-  <a href="#about" class="text-gray-700 hover:text-green-500">About</a>
-  <a href="#services" class="text-gray-700 hover:text-green-500">Services</a>
-  <a href="#toys" class="text-gray-700 hover:text-green-500">Toys</a>
-  <a href="#contact" class="text-gray-700 hover:text-green-500">Contact</a>
+  <a href="#" class="text-gray-700 hover:text-green-500">About</a>
+  <a href="#" class="text-gray-700 hover:text-green-500">Services</a>
+  <a href="#" class="text-gray-700 hover:text-green-500">Contact</a>
+  </div>
+  <div class="md:hidden">
+  <button id="mobile-menu-button" class="focus:outline-none">
+  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+  xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+  d="M4 6h16M4 12h16M4 18h16"></path>
+  </svg>
+  </button>
+  </div>
+  </div>
+ 
+
+  <!-- Mobile Menu (Hidden by default) -->
+  <div class="md:hidden hidden" id="mobile-menu">
+  <div class="bg-gray-100 py-2 px-4">
+  <a href="#" class="block py-1 text-gray-700 hover:text-green-500">Home</a>
+  <a href="#" class="block py-1 text-gray-700 hover:text-green-500">About</a>
+  <a href="#" class="block py-1 text-gray-700 hover:text-green-500">Services</a>
+  <a href="#" class="block py-1 text-gray-700 hover:text-green-500">Contact</a>
   </div>
   </div>
   </nav>
@@ -46,101 +75,110 @@
   <p class="text-gray-700 text-lg mb-8">
   Discover a world of fun and learning with our amazing collection of toys. We have something for every kid!
   </p>
-  <a href="#toys" class="bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
-  Explore Our Toys
+  <a href="#"
+  class="bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out shadow-md">
+  Explore Our Toys!
   </a>
   </div>
   <div class="md:w-1/2">
-  <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRveXN8ZW58MHx8MHx8fDA%3D&w=1000&q=80" alt="Colorful Toys" class="rounded-lg shadow-md">
+  <img src="https://i.ibb.co/0Jk3r7n/hero-toys.jpg" alt="Toys" class="rounded-lg shadow-lg">
   </div>
   </div>
   </section>
  
 
-  <!-- About Section -->
-  <section id="about" class="py-16 bg-white">
+  <!-- Featured Products Section -->
+  <section class="py-16 bg-white">
   <div class="container mx-auto px-4">
-  <h2 class="text-3xl font-bold text-green-700 text-center mb-8">About Funville Toys</h2>
-  <p class="text-gray-700 leading-relaxed text-center">
-  At Funville Toys, we believe in the power of play. We are dedicated to providing high-quality, safe, and engaging toys that inspire creativity and learning in children. Our mission is to make playtime fun and educational for kids of all ages. We carefully select our toys to ensure they meet the highest standards of quality and safety.
+  <h2 class="text-3xl font-bold text-green-700 text-center mb-8">Featured Toys</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+ 
+
+  <!-- Product 1 -->
+  <div class="bg-yellow-50 rounded-lg shadow-md p-4">
+  <img src="https://i.ibb.co/Qn1V5tK/building-blocks.jpg" alt="Building Blocks Set" class="rounded-md mb-4">
+  <h3 class="text-xl font-semibold text-green-600">Building Blocks Set</h3>
+  <p class="text-gray-700">A classic toy for creativity and learning.</p>
+  <a href="#"
+  class="inline-block bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full mt-4 transition duration-300">View
+  Details</a>
+  </div>
+ 
+
+  <!-- Product 2 -->
+  <div class="bg-yellow-50 rounded-lg shadow-md p-4">
+  <img src="https://i.ibb.co/yq5XQfN/stuffed-lion.jpg" alt="Stuffed Animal - Lion" class="rounded-md mb-4">
+  <h3 class="text-xl font-semibold text-green-600">Stuffed Animal - Lion</h3>
+  <p class="text-gray-700">A cuddly companion for your little one.</p>
+  <a href="#"
+  class="inline-block bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full mt-4 transition duration-300">View
+  Details</a>
+  </div>
+ 
+
+  <!-- Product 3 -->
+  <div class="bg-yellow-50 rounded-lg shadow-md p-4">
+  <img src="https://i.ibb.co/kX4Hn0z/remote-control-car.jpg" alt="Remote Control Car" class="rounded-md mb-4">
+  <h3 class="text-xl font-semibold text-green-600">Remote Control Car</h3>
+  <p class="text-gray-700">Fast-paced fun for kids of all ages.</p>
+  <a href="#"
+  class="inline-block bg-green-400 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full mt-4 transition duration-300">View
+  Details</a>
+  </div>
+ 
+
+  </div>
+  </div>
+  </section>
+ 
+
+  <!-- About Us Section -->
+  <section class="py-16 bg-green-100">
+  <div class="container mx-auto px-4 flex items-center justify-center flex-col md:flex-row">
+  <div class="md:w-1/2">
+  <img src="https://i.ibb.co/Yf1L3vN/about-us.jpg" alt="About Us" class="rounded-lg shadow-lg">
+  </div>
+  <div class="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
+  <h2 class="text-3xl font-bold text-green-700 mb-6">About Funville Toys</h2>
+  <p class="text-gray-700 text-lg mb-8">
+  At Funville Toys, we believe in the power of play. We're dedicated to providing high-quality, safe, and engaging
+  toys that inspire creativity and learning in children. Our mission is to bring joy to kids and families around the
+  world.
   </p>
-  </div>
-  </section>
- 
-
-  <!-- Services Section -->
-  <section id="services" class="py-16 bg-yellow-50">
-  <div class="container mx-auto px-4">
-  <h2 class="text-3xl font-bold text-green-700 text-center mb-8">Our Services</h2>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-  <div class="bg-white rounded-lg shadow-md p-6">
-  <h3 class="text-xl font-semibold text-green-600 mb-2">Wide Selection of Toys</h3>
-  <p class="text-gray-700">We offer a diverse range of toys, from classic favorites to the latest trends.</p>
-  </div>
-  <div class="bg-white rounded-lg shadow-md p-6">
-  <h3 class="text-xl font-semibold text-green-600 mb-2">Safe and High-Quality</h3>
-  <p class="text-gray-700">All our toys are made from safe materials and undergo rigorous quality checks.</p>
-  </div>
-  <div class="bg-white rounded-lg shadow-md p-6">
-  <h3 class="text-xl font-semibold text-green-600 mb-2">Fast and Reliable Shipping</h3>
-  <p class="text-gray-700">We provide fast and reliable shipping to ensure your toys arrive on time.</p>
-  </div>
-  </div>
-  </div>
-  </section>
- 
-
-  <!-- Toys Section -->
-  <section id="toys" class="py-16 bg-green-50">
-  <div class="container mx-auto px-4">
-  <h2 class="text-3xl font-bold text-green-700 text-center mb-8">Explore Our Toy Collection</h2>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-  <div class="bg-white rounded-lg shadow-md overflow-hidden">
-  <img src="https://images.unsplash.com/photo-1550345332-09e3ac987658?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80" alt="Building Blocks" class="w-full h-48 object-cover">
-  <div class="p-4">
-  <h3 class="text-xl font-semibold text-green-600 mb-2">Building Blocks</h3>
-  <p class="text-gray-700">Inspire creativity and problem-solving skills.</p>
-  </div>
-  </div>
-  <div class="bg-white rounded-lg shadow-md overflow-hidden">
-  <img src="https://images.unsplash.com/photo-1617594747239-781967368197?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80" alt="Stuffed Animals" class="w-full h-48 object-cover">
-  <div class="p-4">
-  <h3 class="text-xl font-semibold text-green-600 mb-2">Stuffed Animals</h3>
-  <p class="text-gray-700">Cuddly companions for endless adventures.</p>
-  </div>
-  </div>
-  <div class="bg-white rounded-lg shadow-md overflow-hidden">
-  <img src="https://images.unsplash.com/photo-1606092147847-66059f474710?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Educational Games" class="w-full h-48 object-cover">
-  <div class="p-4">
-  <h3 class="text-xl font-semibold text-green-600 mb-2">Educational Games</h3>
-  <p class="text-gray-700">Make learning fun with our interactive games.</p>
-  </div>
-  </div>
+  <a href="#"
+  class="bg-yellow-400 hover:bg-yellow-600 text-white font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out shadow-md">
+  Learn More About Us
+  </a>
   </div>
   </div>
   </section>
  
 
   <!-- Contact Section -->
-  <section id="contact" class="py-16 bg-yellow-100">
+  <section class="py-16 bg-white">
   <div class="container mx-auto px-4">
   <h2 class="text-3xl font-bold text-green-700 text-center mb-8">Contact Us</h2>
-  <div class="max-w-md mx-auto">
+  <div class="max-w-lg mx-auto">
   <form>
   <div class="mb-4">
   <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
-  <input type="text" id="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+  <input type="text" id="name"
+  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
   </div>
   <div class="mb-4">
   <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
-  <input type="email" id="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+  <input type="email" id="email"
+  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
   </div>
   <div class="mb-6">
   <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message:</label>
-  <textarea id="message" rows="4" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+  <textarea id="message" rows="4"
+  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
   </div>
   <div class="flex items-center justify-between">
-  <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+  <button
+  class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+  type="submit">
   Send Message
   </button>
   </div>
@@ -151,11 +189,24 @@
  
 
   <!-- Footer -->
-  <footer class="bg-green-600 py-4 text-white text-center">
-  &copy; 2024 Funville Toys. All rights reserved.
+  <footer class="bg-green-600 py-8 text-white text-center">
+  <p>&copy; 2024 Funville Toys. All rights reserved.</p>
   </footer>
  
 
+  <script>
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+ 
+
+  mobileMenuButton.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+  });
+  </script>
+ 
+
  </body>
+ 
+
  </html>
  ```
