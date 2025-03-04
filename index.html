@@ -4,183 +4,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forgotten Dreams Academy</title>
+    <title>A Sad School</title>
+    <meta name="description" content="Where dreams go to die. Maybe learning happens.">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Lora', serif;
-            background-color: #f3f4f6; /* Light gray background */
+            background-color: #111827; /* Dark Gray */
+            color: #6b7280; /* Light Gray */
         }
 
         .hero-section {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1472179442897-f8463e3e9186?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with your image */
-            background-size: cover;
-            background-position: center;
-            height: 600px; /* Adjust as needed */
+            background-color: #374151; /* Darker Gray */
         }
 
-        .course-card {
-            transition: transform 0.3s ease-in-out;
+        .service-card {
+            background-color: #4b5563; /* Even Darker Gray */
         }
 
-        .course-card:hover {
-            transform: scale(1.05);
+        .footer-section {
+            background-color: #1f2937; /* Very Dark Gray */
         }
-        .btn-custom {
-            background-color: #4f46e5; /* Indigo 500 */
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 0.375rem; /* Rounded corners */
-            transition: background-color 0.3s ease;
-        }
-
-        .btn-custom:hover {
-            background-color: #3730a3; /* Indigo 700 */
-        }
-
-
     </style>
 </head>
-<body class="antialiased text-gray-800">
+<body class="font-sans">
 
-    <!-- Navigation -->
-    <nav class="bg-black shadow-md">
-        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
-            <a href="#" class="text-white text-xl font-bold">Forgotten Dreams Academy</a>
-            <div class="space-x-6">
-                <a href="#" class="text-gray-300 hover:text-white">About</a>
-                <a href="#" class="text-gray-300 hover:text-white">Courses</a>
-                <a href="#" class="text-gray-300 hover:text-white">Admissions</a>
-                <a href="#" class="text-gray-300 hover:text-white">Contact</a>
-            </div>
+    <!-- Header -->
+    <header class="bg-indigo-900 text-white py-4">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl font-semibold">The School of Broken Hopes</h1>
+            <p class="italic">Where potential fades.</p>
         </div>
-    </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section class="hero-section text-white text-center flex items-center justify-center">
-        <div class="container mx-auto px-4">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Where Potential Sleeps</h1>
-            <p class="text-lg md:text-xl mb-8">Unearthing the echoes of what might have been...</p>
-            <a href="#" class="btn-custom">Explore Our Programs</a>
+    <section class="hero-section py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-gray-300 mb-4">Welcome to Despair</h2>
+            <p class="text-xl text-gray-400 mb-8">Learn... or don't. It probably doesn't matter.</p>
+            <img src="https://images.unsplash.com/photo-1557682250-33639f1a08a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2FkfGVufDB8fDB8fHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Sad Student" class="rounded-lg shadow-xl mx-auto mb-8" style="max-width: 600px;">
+            <a href="#" class="bg-red-700 hover:bg-red-900 text-white font-bold py-3 px-6 rounded-full">Give Up Now</a>
         </div>
     </section>
 
-    <!-- Courses Section -->
-    <section class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-semibold text-center mb-8 text-gray-700">Courses on Lost Opportunities</h2>
+    <!-- Services Section -->
+    <section class="py-12">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold text-gray-300 text-center mb-8">Offerings of Futility</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                <!-- Course Card 1 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden course-card">
-                    <img src="https://images.unsplash.com/photo-1519756481057-7649e5812497?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Faded Dreams" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800">The Unwritten Novel</h3>
-                        <p class="text-gray-600 mb-4">A workshop on the stories that never found their pages.</p>
-                        <span class="inline-block bg-red-200 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">Regret</span>
-                    </div>
+                <!-- Service Card 1 -->
+                <div class="service-card p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-200 mb-2">Meaningless Math</h3>
+                    <p class="text-gray-400">Numbers that add up to nothing.</p>
                 </div>
 
-                <!-- Course Card 2 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden course-card">
-                    <img src="https://images.unsplash.com/photo-1473654793319-08d3af5a9944?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Silent Music" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800">The Unsung Melody</h3>
-                        <p class="text-gray-600 mb-4">Exploring the music that remained trapped within.</p>
-                        <span class="inline-block bg-orange-200 text-orange-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">Missed Note</span>
-                    </div>
+                <!-- Service Card 2 -->
+                <div class="service-card p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-200 mb-2">Pointless Physics</h3>
+                    <p class="text-gray-400">Understanding the universe, but so what?</p>
                 </div>
 
-                <!-- Course Card 3 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden course-card">
-                    <img src="https://images.unsplash.com/photo-1507842214779-846422064a81?q=80&w=2094&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Unseen Art" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800">The Unpainted Canvas</h3>
-                        <p class="text-gray-600 mb-4">A study of the art that never made it to the world.</p>
-                        <span class="inline-block bg-yellow-200 text-yellow-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">Unrealized</span>
-                    </div>
+                <!-- Service Card 3 -->
+                <div class="service-card p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-200 mb-2">Desolate Literature</h3>
+                    <p class="text-gray-400">Stories of sorrow and despair.</p>
                 </div>
 
-                <!-- Course Card 4 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden course-card">
-                    <img src="https://images.unsplash.com/photo-1519682337379-efc5443361e7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Unseen Art" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800">The Unseen Science</h3>
-                        <p class="text-gray-600 mb-4">A study of the science that never made it to the world.</p>
-                        <span class="inline-block bg-green-200 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">Unrealized</span>
-                    </div>
+                <!-- Service Card 4 -->
+                <div class="service-card p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-200 mb-2">Empty Economics</h3>
+                    <p class="text-gray-400">The dismal science of poverty.</p>
                 </div>
 
-                <!-- Course Card 5 -->
-                 <div class="bg-white rounded-lg shadow-md overflow-hidden course-card">
-                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Unseen Art" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800">The Unseen Math</h3>
-                        <p class="text-gray-600 mb-4">A study of the math that never made it to the world.</p>
-                        <span class="inline-block bg-blue-200 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">Unrealized</span>
-                    </div>
+                <!-- Service Card 5 -->
+                <div class="service-card p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-200 mb-2">Failing Philosophy</h3>
+                    <p class="text-gray-400">Questioning everything, finding no answers.</p>
                 </div>
 
-                <!-- Course Card 6 -->
-                  <div class="bg-white rounded-lg shadow-md overflow-hidden course-card">
-                    <img src="https://images.unsplash.com/photo-1503756806862-2ca019b0a14c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Unseen Art" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800">The Unseen Economics</h3>
-                        <p class="text-gray-600 mb-4">A study of the economics that never made it to the world.</p>
-                        <span class="inline-block bg-black text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">Unrealized</span>
-                    </div>
+                <!-- Service Card 6 -->
+                <div class="service-card p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-200 mb-2">Lost Languages</h3>
+                    <p class="text-gray-400">Speaking to no one.</p>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- Admissions Section -->
-    <section class="py-16 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-semibold text-center mb-8 text-gray-700">Admissions - Accept Your Fate</h2>
-            <p class="text-lg text-gray-600 text-center mb-8">Join us in exploring the depths of unrealized potential. Spaces are always available...</p>
-            <div class="flex justify-center">
-                <a href="#" class="btn-custom ">Apply Now (If You Dare)</a>
-            </div>
+    <!-- About Section -->
+    <section class="py-12">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold text-gray-300 text-center mb-8">About Us (Why Bother?)</h2>
+            <p class="text-gray-400 leading-relaxed">We're just trying to make a living.  Don't expect miracles.</p>
+            <img src="https://images.unsplash.com/photo-1517842065268-bdb92e44a84a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2FkfGVufDB8fDB8fHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Sad Teacher" class="rounded-lg shadow-xl mx-auto mt-8" style="max-width: 600px;">
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-semibold text-center mb-8 text-gray-700">Contact Us - Share Your Regrets</h2>
+    <section class="py-12">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold text-gray-300 text-center mb-8">Contact Us (If You Must)</h2>
             <form class="max-w-lg mx-auto">
                 <div class="mb-4">
-                    <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
+                    <label for="name" class="block text-gray-400 text-sm font-bold mb-2">Name:</label>
                     <input type="text" id="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
                 </div>
                 <div class="mb-4">
-                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                    <label for="email" class="block text-gray-400 text-sm font-bold mb-2">Email:</label>
                     <input type="email" id="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
                 </div>
                 <div class="mb-6">
-                    <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message:</label>
+                    <label for="message" class="block text-gray-400 text-sm font-bold mb-2">Message:</label>
                     <textarea id="message" rows="4" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
                 </div>
                 <div class="flex items-center justify-between">
-                    <button class="btn-custom" type="submit">Send Your Sighs</button>
+                    <button class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                        Send (Maybe We'll Read It)
+                    </button>
                 </div>
             </form>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black text-white py-8">
-        <div class="container mx-auto px-4 text-center">
-            <p>&copy; 2024 Forgotten Dreams Academy. All rights reserved. Let the dust settle...</p>
+    <footer class="footer-section py-8">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-500">&copy; 2024 The School of Broken Hopes. All rights reserved (but who cares?).</p>
         </div>
     </footer>
 
 </body>
 </html>
 ```
-
