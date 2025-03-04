@@ -1,222 +1,186 @@
 ```html
- <!DOCTYPE html>
- <html lang="en">
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgotten Dreams Academy</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lora', serif;
+            background-color: #f3f4f6; /* Light gray background */
+        }
 
- <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rich Threads - Classic Fashion</title>
-  <meta name="description"
-  content="Experience the epitome of classic fashion with Rich Threads. Discover timeless designs and luxurious fabrics that exude sophistication and style.">
-  <meta name="keywords" content="classic fashion, luxury clothing, timeless designs, high-end fashion, elegant apparel, Rich Threads">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap"
-  rel="stylesheet">
-  <style>
-  /* Custom Styles */
-  body {
-  font-family: 'Roboto', sans-serif;
-  }
- 
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1472179442897-f8463e3e9186?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            height: 600px; /* Adjust as needed */
+        }
 
-  h1,
-  h2,
-  h3 {
-  font-family: 'Playfair Display', serif;
-  }
- 
+        .course-card {
+            transition: transform 0.3s ease-in-out;
+        }
 
-  .smooth-scroll {
-  scroll-behavior: smooth;
-  }
- 
+        .course-card:hover {
+            transform: scale(1.05);
+        }
+        .btn-custom {
+            background-color: #4f46e5; /* Indigo 500 */
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem; /* Rounded corners */
+            transition: background-color 0.3s ease;
+        }
 
-  /* Hover Effects */
-  .hover-red:hover {
-  background-color: #990000;
-  /* Darker red on hover */
-  }
- 
+        .btn-custom:hover {
+            background-color: #3730a3; /* Indigo 700 */
+        }
 
-  /* Hero Section Customization */
-  .hero-section {
-  background-image: url('https://images.unsplash.com/photo-1519638394159-c9b2951e5c09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80');
-  /* Replace with your image */
-  background-size: cover;
-  background-position: center;
-  }
-  </style>
- </head>
- 
 
- <body class="bg-gray-50 text-gray-800 smooth-scroll">
- 
+    </style>
+</head>
+<body class="antialiased text-gray-800">
 
-  <!-- Header -->
-  <header class="bg-black py-6 shadow-md fixed top-0 w-full z-10">
-  <div class="container mx-auto px-4">
-  <div class="flex items-center justify-between">
-  <a href="#" class="text-red-600 text-2xl font-semibold">Rich Threads</a>
-  <nav>
-  <ul class="flex space-x-6">
-  <li><a href="#collections" class="text-gray-300 hover:text-white">Collections</a></li>
-  <li><a href="#about" class="text-gray-300 hover:text-white">About</a></li>
-  <li><a href="#lookbook" class="text-gray-300 hover:text-white">Lookbook</a></li>
-  <li><a href="#contact" class="text-gray-300 hover:text-white">Contact</a></li>
-  </ul>
-  </nav>
-  </div>
-  </div>
-  </header>
- 
+    <!-- Navigation -->
+    <nav class="bg-black shadow-md">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="#" class="text-white text-xl font-bold">Forgotten Dreams Academy</a>
+            <div class="space-x-6">
+                <a href="#" class="text-gray-300 hover:text-white">About</a>
+                <a href="#" class="text-gray-300 hover:text-white">Courses</a>
+                <a href="#" class="text-gray-300 hover:text-white">Admissions</a>
+                <a href="#" class="text-gray-300 hover:text-white">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero-section py-24 text-center text-white mt-20">
-  <div class="container mx-auto px-4 relative">
-  <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
-  <h1 class="text-5xl font-bold mb-6">Experience Classic Fashion</h1>
-  <p class="text-xl mb-12">Discover timeless designs and luxurious fabrics that exude sophistication and
-  style.</p>
-  <a href="#collections" class="bg-red-600 hover-red text-white font-semibold py-3 px-8 rounded-full">Explore
-  Collections</a>
-  </div>
-  </div>
-  </section>
- 
+    <!-- Hero Section -->
+    <section class="hero-section text-white text-center flex items-center justify-center">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Where Potential Sleeps</h1>
+            <p class="text-lg md:text-xl mb-8">Unearthing the echoes of what might have been...</p>
+            <a href="#" class="btn-custom">Explore Our Programs</a>
+        </div>
+    </section>
 
-  <!-- Collections Section -->
-  <section id="collections" class="py-16 bg-white">
-  <div class="container mx-auto px-4">
-  <h2 class="text-3xl font-semibold text-center mb-8 text-gray-800">Our Collections</h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-  <!-- Collection 1 -->
-  <div class="shadow-md rounded-lg overflow-hidden">
-  <img src="https://images.unsplash.com/photo-1585495733493-a56a75a0a6d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-  alt="Classic Dress" class="w-full h-48 object-cover">
-  <div class="p-4">
-  <h3 class="text-xl font-semibold mb-2 text-gray-800">Elegant Evening Wear</h3>
-  <p class="text-gray-600">Sophisticated dresses for unforgettable evenings.</p>
-  <a href="#" class="inline-block mt-4 bg-black hover-red text-white font-semibold py-2 px-6 rounded">View
-  More</a>
-  </div>
-  </div>
-  <!-- Collection 2 -->
-  <div class="shadow-md rounded-lg overflow-hidden">
-  <img src="https://images.unsplash.com/photo-1550311712-dca5f069f98a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-  alt="Classic Suit" class="w-full h-48 object-cover">
-  <div class="p-4">
-  <h3 class="text-xl font-semibold mb-2 text-gray-800">Tailored Suits</h3>
-  <p class="text-gray-600">Impeccably crafted suits for the modern gentleman.</p>
-  <a href="#" class="inline-block mt-4 bg-black hover-red text-white font-semibold py-2 px-6 rounded">View
-  More</a>
-  </div>
-  </div>
-  <!-- Collection 3 -->
-  <div class="shadow-md rounded-lg overflow-hidden">
-  <img src="https://images.unsplash.com/photo-1571146443014-4c7eaef29628?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-  alt="Luxury Accessories" class="w-full h-48 object-cover">
-  <div class="p-4">
-  <h3 class="text-xl font-semibold mb-2 text-gray-800">Luxury Accessories</h3>
-  <p class="text-gray-600">Complete your look with our exquisite accessories.</p>
-  <a href="#" class="inline-block mt-4 bg-black hover-red text-white font-semibold py-2 px-6 rounded">View
-  More</a>
-  </div>
-  </div>
-  </div>
-  </div>
-  </section>
- 
+    <!-- Courses Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-center mb-8 text-gray-700">Courses on Lost Opportunities</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-  <!-- About Section -->
-  <section id="about" class="py-16 bg-gray-100">
-  <div class="container mx-auto px-4">
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-  <div>
-  <h2 class="text-3xl font-semibold mb-4 text-gray-800">About Rich Threads</h2>
-  <p class="text-gray-700 mb-4">Rich Threads is dedicated to providing classic fashion that transcends trends.
-  Our collections are crafted with the finest materials and attention to detail, ensuring timeless elegance and
-  lasting quality.</p>
-  <p class="text-gray-700">We believe that true style is about expressing individuality with grace and
-  confidence. Discover the art of classic fashion with Rich Threads.</p>
-  </div>
-  <div>
-  <img src="https://images.unsplash.com/photo-1588044850758-8ad5b4a74089?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-  alt="About Us" class="w-full rounded-lg shadow-md">
-  </div>
-  </div>
-  </div>
-  </section>
- 
+                <!-- Course Card 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden course-card">
+                    <img src="https://images.unsplash.com/photo-1519756481057-7649e5812497?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Faded Dreams" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">The Unwritten Novel</h3>
+                        <p class="text-gray-600 mb-4">A workshop on the stories that never found their pages.</p>
+                        <span class="inline-block bg-red-200 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">Regret</span>
+                    </div>
+                </div>
 
-  <!-- Lookbook Section -->
-  <section id="lookbook" class="py-16 bg-white">
-  <div class="container mx-auto px-4">
-  <h2 class="text-3xl font-semibold text-center mb-8 text-gray-800">Lookbook</h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-  <!-- Lookbook Image 1 -->
-  <div class="shadow-md rounded-lg overflow-hidden">
-  <img src="https://images.unsplash.com/photo-1547949003-9586c6549865?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-  alt="Lookbook 1" class="w-full h-64 object-cover">
-  </div>
-  <!-- Lookbook Image 2 -->
-  <div class="shadow-md rounded-lg overflow-hidden">
-  <img src="https://images.unsplash.com/photo-1612852671791-9d8339e23a30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-  alt="Lookbook 2" class="w-full h-64 object-cover">
-  </div>
-  <!-- Lookbook Image 3 -->
-  <div class="shadow-md rounded-lg overflow-hidden">
-  <img src="https://images.unsplash.com/photo-1580828740640-a9d712492724?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-  alt="Lookbook 3" class="w-full h-64 object-cover">
-  </div>
-  </div>
-  </div>
-  </section>
- 
+                <!-- Course Card 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden course-card">
+                    <img src="https://images.unsplash.com/photo-1473654793319-08d3af5a9944?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Silent Music" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">The Unsung Melody</h3>
+                        <p class="text-gray-600 mb-4">Exploring the music that remained trapped within.</p>
+                        <span class="inline-block bg-orange-200 text-orange-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">Missed Note</span>
+                    </div>
+                </div>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-16 bg-gray-100">
-  <div class="container mx-auto px-4">
-  <h2 class="text-3xl font-semibold text-center mb-8 text-gray-800">Contact Us</h2>
-  <div class="max-w-lg mx-auto">
-  <form class="space-y-6">
-  <div>
-  <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
-  <input type="text" id="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700
-  leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Name">
-  </div>
-  <div>
-  <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
-  <input type="email" id="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700
-  leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Email">
-  </div>
-  <div>
-  <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
-  <textarea id="message" rows="4"
-  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-  placeholder="Your Message"></textarea>
-  </div>
-  <button type="submit"
-  class="bg-black hover-red text-white font-semibold py-3 px-6 rounded-full w-full">Send
-  Message</button>
-  </form>
-  </div>
-  </div>
-  </section>
- 
+                <!-- Course Card 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden course-card">
+                    <img src="https://images.unsplash.com/photo-1507842214779-846422064a81?q=80&w=2094&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Unseen Art" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">The Unpainted Canvas</h3>
+                        <p class="text-gray-600 mb-4">A study of the art that never made it to the world.</p>
+                        <span class="inline-block bg-yellow-200 text-yellow-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">Unrealized</span>
+                    </div>
+                </div>
 
-  <!-- Footer -->
-  <footer class="bg-black py-8 text-white text-center">
-  <div class="container mx-auto px-4">
-  <p>&copy; 2024 Rich Threads. All rights reserved.</p>
-  </div>
-  </footer>
- 
+                <!-- Course Card 4 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden course-card">
+                    <img src="https://images.unsplash.com/photo-1519682337379-efc5443361e7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Unseen Art" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">The Unseen Science</h3>
+                        <p class="text-gray-600 mb-4">A study of the science that never made it to the world.</p>
+                        <span class="inline-block bg-green-200 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">Unrealized</span>
+                    </div>
+                </div>
 
- </body>
- 
+                <!-- Course Card 5 -->
+                 <div class="bg-white rounded-lg shadow-md overflow-hidden course-card">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Unseen Art" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">The Unseen Math</h3>
+                        <p class="text-gray-600 mb-4">A study of the math that never made it to the world.</p>
+                        <span class="inline-block bg-blue-200 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">Unrealized</span>
+                    </div>
+                </div>
 
- </html>
- ```
+                <!-- Course Card 6 -->
+                  <div class="bg-white rounded-lg shadow-md overflow-hidden course-card">
+                    <img src="https://images.unsplash.com/photo-1503756806862-2ca019b0a14c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Unseen Art" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">The Unseen Economics</h3>
+                        <p class="text-gray-600 mb-4">A study of the economics that never made it to the world.</p>
+                        <span class="inline-block bg-black text-white text-xs font-medium mr-2 px-2.5 py-0.5 rounded">Unrealized</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Admissions Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-center mb-8 text-gray-700">Admissions - Accept Your Fate</h2>
+            <p class="text-lg text-gray-600 text-center mb-8">Join us in exploring the depths of unrealized potential. Spaces are always available...</p>
+            <div class="flex justify-center">
+                <a href="#" class="btn-custom ">Apply Now (If You Dare)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-center mb-8 text-gray-700">Contact Us - Share Your Regrets</h2>
+            <form class="max-w-lg mx-auto">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
+                    <input type="text" id="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                    <input type="email" id="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message:</label>
+                    <textarea id="message" rows="4" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+                </div>
+                <div class="flex items-center justify-between">
+                    <button class="btn-custom" type="submit">Send Your Sighs</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Forgotten Dreams Academy. All rights reserved. Let the dust settle...</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+```
+
