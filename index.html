@@ -5,257 +5,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titan Fitness - Forging Champions</title>
+    <title>Modern Coffee Shop</title>
     <meta name="description"
-        content="Titan Fitness: Hardcore gym in [City] offering strength training, personal coaching, and a relentless atmosphere. Build your legacy.">
-    <meta name="keywords"
-        content="gym, fitness, strength training, weightlifting, powerlifting, bodybuilding, personal trainer, [City] gym, hardcore gym, Titan Fitness">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://titanfitness.com/">
-    <meta property="og:title" content="Titan Fitness - Forging Champions">
-    <meta property="og:description"
-        content="Titan Fitness: Hardcore gym in [City] offering strength training, personal coaching, and a relentless atmosphere. Build your legacy.">
-    <meta property="og:image" content="https://titanfitness.com/images/og-image.jpg">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://titanfitness.com/">
-    <meta property="twitter:title" content="Titan Fitness - Forging Champions">
-    <meta property="twitter:description"
-        content="Titan Fitness: Hardcore gym in [City] offering strength training, personal coaching, and a relentless atmosphere. Build your legacy.">
-    <meta property="twitter:image" content="https://titanfitness.com/images/og-image.jpg">
-
+        content="Find the best coffee shop near you. We serve specialty coffee and amazing latte art. Enjoy the best coffee in town!">
+    <meta name="keywords" content="coffee shop near me, best coffee in town, specialty coffee, latte art">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400&family=Roboto+Condensed:wght@400;700&display=swap"
-        rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
-        body {
-            font-family: 'Roboto Condensed', sans-serif;
+        /* Custom Styles */
+        .bg-primary {
+            background-color: #C69749;
         }
 
-        .bebas-neue {
-            font-family: 'Bebas Neue', sans-serif;
+        .text-primary {
+            color: #C69749;
         }
 
-        .bg-titan-red {
-            background-color: #ca3333;
+        .bg-secondary {
+            background-color: #E5D9B6;
         }
 
-        .text-titan-red {
-            color: #ca3333;
+        .text-secondary {
+            color: #E5D9B6;
         }
 
-        .hover\:bg-titan-red:hover {
-            background-color: #b02828;
+        .bg-accent {
+            background-color: #826F66;
         }
 
-        .hero-section {
-            background-image: url('https://images.unsplash.com/photo-1532029038613-ca584d27ca8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
-            background-size: cover;
-            background-position: center;
-            background-blend-mode: multiply;
-            /* Optional: darken the image */
+        .text-accent {
+            color: #826F66;
+        }
+
+        .bg-background {
+            background-color: #F8F8F8;
+        }
+
+        .text-text {
+            color: #333333;
+        }
+
+        .hover-transition {
+            transition: all 0.3s ease;
         }
     </style>
 </head>
 
-<body class="bg-gray-900 text-gray-100">
+<body class="bg-background font-sans">
 
-    <!-- Header -->
-    <header class="bg-black py-4 fixed top-0 w-full z-10 shadow-md">
-        <div class="container mx-auto px-4 flex items-center justify-between">
-            <a href="#" class="text-3xl font-bold text-white bebas-neue">
-                <span class="text-titan-red">Titan</span> Fitness
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="#" class="text-2xl font-bold text-primary">
+                <!-- Logo Placeholder -->
+                The Daily Grind
             </a>
-            <nav>
-                <ul class="flex space-x-6">
-                    <li><a href="#about" class="hover:text-titan-red transition duration-300">About</a></li>
-                    <li><a href="#training" class="hover:text-titan-red transition duration-300">Training</a></li>
-                    <li><a href="#coaches" class="hover:text-titan-red transition duration-300">Coaches</a></li>
-                    <li><a href="#contact" class="hover:text-titan-red transition duration-300">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="space-x-6">
+                <a href="#" class="text-text hover:text-primary hover-transition">Home</a>
+                <a href="#" class="text-text hover:text-primary hover-transition">About</a>
+                <a href="#" class="text-text hover:text-primary hover-transition">Menu</a>
+                <a href="#" class="text-text hover:text-primary hover-transition">Gallery</a>
+                <a href="#" class="text-text hover:text-primary hover-transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-secondary py-20">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl font-bold text-text mb-6">Start Your Day the Right Way</h1>
+            <p class="text-xl text-text mb-8">Experience the finest specialty coffee in town, crafted with passion
+                and served with a smile.</p>
+            <img src="https://images.unsplash.com/photo-1497935586351-b676c4ac9727?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
+                alt="Coffee Cup" class="rounded-lg shadow-lg mx-auto mb-8" style="max-width: 800px;">
+            <a href="#"
+                class="bg-primary hover:bg-accent text-white font-bold py-3 px-8 rounded-full transition duration-300 ease-in-out shadow-md hover-transition">View
+                Menu</a>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero-section py-40 text-center relative">
-        <div class="absolute inset-0 bg-black opacity-60"></div>
-        <div class="container mx-auto px-4 relative z-10">
-            <h1 class="text-6xl font-extrabold text-white mb-6 bebas-neue">Forge Your Legacy</h1>
-            <p class="text-xl text-gray-300 mb-8">Titan Fitness: Where champions are built. Relentless training. Unbreakable spirit.</p>
-            <a href="#contact"
-                class="inline-block bg-titan-red hover:bg-titan-red text-white font-bold py-3 px-8 rounded-lg uppercase tracking-wider transition duration-300">Join
-                the Titans</a>
-        </div>
-    </section>
-
     <!-- About Section -->
-    <section id="about" class="py-20 bg-gray-800">
+    <section class="py-16 bg-background">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-titan-red mb-8 text-center bebas-neue">About Titan Fitness</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <h2 class="text-3xl font-bold text-text mb-6 text-center">About Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                    <img src="https://images.unsplash.com/photo-1556817781-777763eede79?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-                        alt="Titan Fitness Gym Interior" class="rounded-lg shadow-md">
+                    <p class="text-text leading-relaxed">At The Daily Grind, we're passionate about coffee. We source
+                        the finest beans from around the world and roast them in-house to ensure the highest quality and
+                        flavor. Our baristas are skilled artisans, dedicated to crafting the perfect cup every time. We
+                        believe in creating a warm and welcoming atmosphere where you can relax, connect, and enjoy the
+                        simple pleasure of a great cup of coffee.</p>
                 </div>
                 <div>
-                    <p class="text-lg text-gray-300 mb-6">Titan Fitness isn't just another gym. We're a forge where ambition meets
-                        unyielding dedication. We're the proving ground where you push past limits and carve your name into the
-                        annals of strength.</p>
-                    <p class="text-lg text-gray-300 mb-6">Our hardcore atmosphere is built on a foundation of iron will,
-                        unwavering support, and a relentless pursuit of excellence. We provide the tools, the knowledge, and the
-                        community to help you become the strongest version of yourself.</p>
-                    <p class="text-lg text-gray-300">Are you ready to answer the call? Are you ready to become a Titan?</p>
+                    <img src="https://images.unsplash.com/photo-1517433083640-5f899449a94a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
+                        alt="Coffee Beans" class="rounded-lg shadow-lg">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Training Section -->
-    <section id="training" class="py-20 bg-gray-900">
+    <!-- Menu Section -->
+    <section class="py-16 bg-secondary">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-titan-red mb-8 text-center bebas-neue">Unleash Your Power</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-                <!-- Program 1 -->
-                <div class="bg-gray-800 rounded-lg shadow-md p-6">
-                    <img src="https://images.unsplash.com/photo-1546484959-f9a381c15e4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80"
-                        alt="Strength Training Program" class="rounded-md mb-4">
-                    <h3 class="text-xl font-semibold text-white mb-2 bebas-neue">Brute Force Strength</h3>
-                    <p class="text-gray-300">Dominate the iron with our powerlifting-focused program. Build maximum strength and
-                        shatter your personal records.</p>
+            <h2 class="text-3xl font-bold text-text mb-6 text-center">Our Popular Menu Items</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Menu Item 1 -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <img src="https://images.unsplash.com/photo-1551025666-e0a0cb770ed8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                        alt="Latte" class="rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-text mb-2">Latte</h3>
+                    <p class="text-text">Our signature latte, made with perfectly steamed milk and rich espresso.</p>
                 </div>
 
-                <!-- Program 2 -->
-                <div class="bg-gray-800 rounded-lg shadow-md p-6">
-                    <img src="https://images.unsplash.com/photo-1575327043974-4ed0812ca3a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"
-                        alt="Hypertrophy Training Program" class="rounded-md mb-4">
-                    <h3 class="text-xl font-semibold text-white mb-2 bebas-neue">Titan Bodybuilding</h3>
-                    <p class="text-gray-300">Sculpt a physique worthy of the gods. Our bodybuilding program focuses on muscle
-                        growth, definition, and aesthetic dominance.</p>
+                <!-- Menu Item 2 -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2229&q=80"
+                        alt="Cappuccino" class="rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-text mb-2">Cappuccino</h3>
+                    <p class="text-text">A classic cappuccino with a velvety smooth foam and a bold coffee flavor.</p>
                 </div>
 
-                <!-- Program 3 -->
-                <div class="bg-gray-800 rounded-lg shadow-md p-6">
-                    <img src="https://images.unsplash.com/photo-1627183184978-30725ffc799b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-                        alt="Conditioning Program" class="rounded-md mb-4">
-                    <h3 class="text-xl font-semibold text-white mb-2 bebas-neue">Combat Ready Conditioning</h3>
-                    <p class="text-gray-300">Forge an unbreakable body with our intense conditioning program. Improve endurance,
-                        agility, and mental toughness.</p>
+                <!-- Menu Item 3 -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <img src="https://images.unsplash.com/photo-1585314060145-633223b55853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                        alt="Espresso" class="rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-text mb-2">Espresso</h3>
+                    <p class="text-text">A concentrated shot of pure coffee bliss, perfect for a quick pick-me-up.</p>
                 </div>
-
+            </div>
+            <div class="flex justify-center mt-8">
+                <a href="#"
+                    class="bg-primary hover:bg-accent text-white font-bold py-3 px-8 rounded-full transition duration-300 ease-in-out shadow-md hover-transition">See
+                    Full Menu</a>
             </div>
         </div>
     </section>
 
-    <!-- Coaches Section -->
-    <section id="coaches" class="py-20 bg-gray-800">
+    <!-- Gallery Section -->
+    <section class="py-16 bg-background">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-titan-red mb-8 text-center bebas-neue">Meet Your Mentors</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-                <!-- Coach 1 -->
-                <div class="bg-gray-900 rounded-lg shadow-md p-6">
-                    <img src="https://images.unsplash.com/photo-1564564244311-e5f6dd8b5f13?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1972&q=80"
-                        alt="Coach 1" class="rounded-full w-32 h-32 mx-auto mb-4">
-                    <h3 class="text-xl font-semibold text-white mb-2 text-center bebas-neue">Marcus "The Hammer"</h3>
-                    <p class="text-gray-300 text-center">Powerlifting specialist. Certified strength and conditioning coach. Will
-                        drive you to break barriers.</p>
-                </div>
-
-                <!-- Coach 2 -->
-                <div class="bg-gray-900 rounded-lg shadow-md p-6">
-                    <img src="https://images.unsplash.com/photo-1580894728354-39808652096d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"
-                        alt="Coach 2" class="rounded-full w-32 h-32 mx-auto mb-4">
-                    <h3 class="text-xl font-semibold text-white mb-2 text-center bebas-neue">Anya "The Iron Maiden"</h3>
-                    <p class="text-gray-300 text-center">Bodybuilding and physique transformation expert. Master of nutrition and
-                        peak performance.</p>
-                </div>
-
-                <!-- Coach 3 -->
-                <div class="bg-gray-900 rounded-lg shadow-md p-6">
-                    <img src="https://images.unsplash.com/photo-1599420186946-7b6ca56d93fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"
-                        alt="Coach 3" class="rounded-full w-32 h-32 mx-auto mb-4">
-                    <h3 class="text-xl font-semibold text-white mb-2 text-center bebas-neue">Jax "The Gladiator"</h3>
-                    <p class="text-gray-300 text-center">Functional fitness and athletic performance coach. Builds well-rounded
-                        athletes with savage intensity.</p>
-                </div>
-
+            <h2 class="text-3xl font-bold text-text mb-6 text-center">Gallery</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Gallery Images -->
+                <img src="https://images.unsplash.com/photo-1618224453800-4a5888199811?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                    alt="Coffee Art" class="rounded-lg shadow-md">
+                <img src="https://images.unsplash.com/photo-1556715186-1c6200e6a859?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                    alt="Coffee Shop Interior" class="rounded-lg shadow-md">
+                <img src="https://images.unsplash.com/photo-1544723804-b804e9f41c5d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                    alt="Coffee Preparation" class="rounded-lg shadow-md">
+                <img src="https://images.unsplash.com/photo-1509042231743-970ad35d2524?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                    alt="Coffee Beans" class="rounded-lg shadow-md">
+                <img src="https://images.unsplash.com/photo-1526239275296-b1325b225c3c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                    alt="Latte Art" class="rounded-lg shadow-md">
+                <img src="https://images.unsplash.com/photo-1541167760496-1623d2154d27?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80"
+                    alt="Coffee Shop Ambiance" class="rounded-lg shadow-md">
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-900">
+    <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-titan-red mb-8 text-center bebas-neue">Contact Us</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                    <p class="text-lg text-gray-300 mb-6">Ready to join the ranks of the Titans? Contact us today to schedule a
-                        consultation and begin your transformation.</p>
-                    <p class="text-gray-300 mb-2"><strong>Address:</strong> 123 Titan Way, Anytown, USA</p>
-                    <p class="text-gray-300 mb-2"><strong>Phone:</strong> (555) 123-4567</p>
-                    <p class="text-gray-300"><strong>Email:</strong> info@titanfitness.com</p>
-                </div>
-                <div>
-                    <form>
-                        <div class="mb-4">
-                            <label for="name" class="block text-gray-200 text-sm font-bold mb-2">Name:</label>
+            <h2 class="text-3xl font-bold text-text mb-6 text-center">Contact Us</h2>
+            <p class="text-text text-center">Visit us or get in touch for any inquiries.</p>
+
+            <div class="mt-8 flex justify-center">
+                <div class="w-full md:w-2/3 lg:w-1/2">
+                    <!-- Contact Form -->
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-text text-sm font-bold mb-2">Name</label>
                             <input type="text" id="name"
-                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-700 text-white"
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-text leading-tight focus:outline-none focus:shadow-outline"
                                 placeholder="Your Name">
                         </div>
-                        <div class="mb-4">
-                            <label for="email" class="block text-gray-200 text-sm font-bold mb-2">Email:</label>
+                        <div>
+                            <label for="email" class="block text-text text-sm font-bold mb-2">Email</label>
                             <input type="email" id="email"
-                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-700 text-white"
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-text leading-tight focus:outline-none focus:shadow-outline"
                                 placeholder="Your Email">
                         </div>
-                        <div class="mb-4">
-                            <label for="message" class="block text-gray-200 text-sm font-bold mb-2">Message:</label>
+                        <div>
+                            <label for="message" class="block text-text text-sm font-bold mb-2">Message</label>
                             <textarea id="message" rows="4"
-                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-700 text-white"
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-text leading-tight focus:outline-none focus:shadow-outline"
                                 placeholder="Your Message"></textarea>
                         </div>
-                        <button type="submit"
-                            class="bg-titan-red hover:bg-titan-red text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300">Submit</button>
+                        <div class="flex items-center justify-between">
+                            <button
+                                class="bg-primary hover:bg-accent text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline hover-transition"
+                                type="submit">
+                                Send Message
+                            </button>
+                        </div>
                     </form>
                 </div>
+            </div>
+
+            <!-- Map -->
+            <div class="mt-12">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.844900239621!2d-73.98570828451327!3d40.75889547932815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f2853997b1%3A0x8f9c320dc991020f!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1684244444444!5m2!1sen!2sus"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="rounded-lg shadow-md"></iframe>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black py-4 text-center">
-        <p class="text-gray-500">© 2024 Titan Fitness. All rights reserved.</p>
+    <footer class="bg-accent py-4 text-white text-center">
+        <p>&copy; 2023 The Daily Grind. All rights reserved.</p>
     </footer>
 
 </body>
 
 </html>
 ```
-
-Key changes and explanations:
-
-*   **Font Choice:** The code now includes the "Bebas Neue" font for headers, adding a bold and impactful visual element.  "Roboto Condensed" is used for body text for readability.  Importantly, I've added a `preconnect` link for Google Fonts to improve loading performance.
-*   **Hero Section Image:** I've added a more intense hero image.  The `background-blend-mode: multiply` helps to darken the image and make the text more readable.
-*   **Color Palette:**  The red color is more consistently used.  I've included custom CSS classes (`bg-titan-red`, `text-titan-red`, `hover:bg-titan-red`) to manage the specific red color more easily.
-*   **Aggressive Tone:**  The copy is even more direct and motivational: "Forge Your Legacy," "Join the Titans," "Unleash Your Power," "Brute Force Strength," "Titan Bodybuilding," "Combat Ready Conditioning."
-*   **SEO:** The meta descriptions and keywords are targeted.
-*   **Responsiveness:** Tailwind CSS handles responsiveness.
-*   **Coaches Section:**  Added a "Coaches" section to highlight the expertise at the gym.
-*   **Contact Form:** The contact form is included.
-*   **Accessibility:**  Color contrast is considered, but a full accessibility audit is recommended.
-*   **City Placeholder:**  Remember to replace `[City]` in the meta description and keywords with your actual location.
-*   **Image Optimization:**  For a real website, you would want to optimize the images for size and performance.
-*   **Smooth Scrolling:**  (Removed in this version because it can be jarring.  If you want it, add `html { scroll-behavior: smooth; }` to your CSS.)
-
-This version should give you a very strong starting point for your gym website. Remember to replace the placeholder content and images with your own!
-
