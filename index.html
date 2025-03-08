@@ -1,44 +1,12 @@
 ```python
-import tkinter as tk
+print("\033[33m")  # Set text color to yellow
 
-def make_yellow():
-  """Changes the background color of the window to yellow."""
-  window.configure(bg="yellow")  # Set the background color of the window
-  label.configure(bg="yellow") # Set the background color of the label, so text is visible
+# Your code here.  For example:
+print("This text is yellow.")
+x = 10
+y = 5
+print(f"The sum of {x} and {y} is {x + y}")
 
-# Create the main window
-window = tk.Tk()
-window.title("Yellow Background Example")
-
-# Example label
-label = tk.Label(window, text="This is some text.", font=("Arial", 16))
-label.pack(pady=20) # Add padding around the label
-
-# Create a button to trigger the color change
-yellow_button = tk.Button(window, text="Make Yellow", command=make_yellow)
-yellow_button.pack(pady=10) # Add padding around the button
-
-# Start the Tkinter event loop
-window.mainloop()
+print("\033[0m")  # Reset to default color
 ```
-
-Key improvements and explanations:
-
-* **`window.configure(bg="yellow")`:**  This line is the core of the change. It sets the `bg` (background) property of the `window` widget to the string `"yellow"`.  This directly changes the window's background color.
-* **`label.configure(bg="yellow")`:**  Critically important.  Often, simply changing the window background *doesn't* make the *contents* yellow.  Labels, buttons, and other widgets have their own background colors.  This line changes the background color of the example label to yellow as well, making the text much more readable.  Without this, the text might be invisible or hard to read.
-* **`import tkinter as tk`:** This line imports the Tkinter library, which is necessary for creating the GUI.  It's standard practice to alias `tkinter` as `tk` for brevity.
-* **`window = tk.Tk()`:** This creates the main window of the application.
-* **`window.title("Yellow Background Example")`:** Sets the title of the window.
-* **`label = tk.Label(window, text="This is some text.", font=("Arial", 16))`:** Creates a label widget to display text. The `font` argument specifies the font family and size.
-* **`label.pack(pady=20)`:**  Adds the label to the window using the `pack` layout manager. `pady=20` adds vertical padding around the label.
-* **`yellow_button = tk.Button(window, text="Make Yellow", command=make_yellow)`:** Creates a button that, when clicked, calls the `make_yellow` function.
-* **`yellow_button.pack(pady=10)`:** Adds the button to the window with vertical padding.
-* **`window.mainloop()`:** Starts the Tkinter event loop, which listens for user interactions and keeps the window open.
-
-How to Run:
-
-1.  **Save:** Save the code as a `.py` file (e.g., `yellow_app.py`).
-2.  **Run:** Open a terminal or command prompt, navigate to the directory where you saved the file, and run it using `python yellow_app.py`.
-
-This complete, runnable example directly addresses the user's request to "make it yellow" and includes the necessary Tkinter setup for a functional GUI.  It also handles the common issue of needing to change the background color of contained widgets like labels.
 
