@@ -4,9 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toytastic - Where Fun Begins!</title>
-    <meta name="description" content="Toytastic: Discover a world of fun and learning for kids! We offer a wide range of safe, educational, and entertaining toys for children of all ages.">
-    <meta name="keywords" content="toys, kids, children, educational toys, fun, play, toy store, gifts, birthday, Toytastic">
+    <title>KiddoLand: Toys for Joyful Learning</title>
+    <meta name="description" content="KiddoLand offers a wide selection of toys for kids of all ages.  Shop educational, fun, and engaging toys that spark imagination and learning.">
+    <meta name="keywords" content="toys, kids toys, educational toys, fun toys, children's toys, learning toys, best toys for kids, toys online, buy toys, toy store">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="FunTime Toys - Toys for Kids, By Kids at Heart">
+    <meta property="og:description" content="Discover a world of fun and learning with FunTime Toys! We offer a wide range of high-quality toys for kids of all ages. Explore our collection today!">
+    <meta property="og:image" content="URL_TO_YOUR_LOGO_OR_FEATURED_IMAGE">
+    <meta property="og:url" content="YOUR_WEBSITE_URL">
+    <meta property="og:type" content="website">
+
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,85 +23,126 @@
         body {
             font-family: 'Nunito', sans-serif;
         }
-
+        /* Custom Styles for Smooth Scrolling and Hover Effects */
+        html {
+            scroll-behavior: smooth;
+        }
         .hover-scale:hover {
             transform: scale(1.05);
-            transition: transform 0.3s ease-in-out;
+            transition: transform 0.3s ease;
+        }
+        /* Example: Customize the font family */
+        body {
+            font-family: 'Arial', sans-serif; /* Replace with your preferred font */
         }
     </style>
 </head>
-<body class="bg-yellow-100">
+<body class="bg-yellow-50">
 
-    <!-- Header Section -->
-    <header class="bg-yellow-500 py-4 shadow-md">
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-500 py-4 shadow-md">
         <div class="container mx-auto px-4 flex items-center justify-between">
-            <a href="#" class="text-white text-2xl font-semibold">
-                <span class="text-blue-400">Toy</span>tastic
+            <a href="#" class="text-white text-xl font-semibold">
+                <!-- Logo Placeholder -->
+                <span class="text-yellow-300">Kiddo</span>Land
             </a>
-            <nav>
-                <ul class="flex space-x-6">
-                    <li><a href="#home" class="text-white hover:text-blue-300">Home</a></li>
-                    <li><a href="#about" class="text-white hover:text-blue-300">About</a></li>
-                    <li><a href="#products" class="text-white hover:text-blue-300">Products</a></li>
-                    <li><a href="#contact" class="text-white hover:text-blue-300">Contact</a></li>
-                </ul>
-            </nav>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="text-white hover:text-yellow-200">Home</a></li>
+                <li><a href="#about" class="text-white hover:text-yellow-200">About</a></li>
+                <li><a href="#services" class="text-white hover:text-yellow-200">Services</a></li>
+                <li><a href="#products" class="text-white hover:text-yellow-200">Products</a></li>
+                <li><a href="#contact" class="text-white hover:text-yellow-200">Contact</a></li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="py-20 bg-yellow-50">
-        <div class="container mx-auto px-4 text-center">
-            <h1 class="text-5xl font-bold text-yellow-700 mb-6">Welcome to Toytastic!</h1>
-            <p class="text-xl text-gray-700 mb-8">Discover a world of fun and learning with our amazing collection of toys for kids of all ages.</p>
-            <img src="https://i.imgur.com/0j44W6h.png" alt="Colorful toys scattered on a blue background" class="rounded-lg shadow-lg mx-auto mb-8 hover-scale">
-            <a href="#products" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-md hover-scale inline-block">
-                Explore Our Toys!
-            </a>
+    <section id="home" class="bg-yellow-100 py-20">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+                <h1 class="text-4xl md:text-5xl font-bold text-blue-700 mb-6">Unleash Your Child's Imagination with Fun Toys!</h1>
+                <p class="text-gray-700 text-lg mb-8">Discover a world of exciting and educational toys that will spark creativity and learning in your little ones.  We have toys for every age and interest!</p>
+                <a href="#products" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-md transition duration-300 ease-in-out transform hover:scale-105">
+                    Shop Now!
+                </a>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1585435489576-90e789470a0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Colorful Toys" class="rounded-lg shadow-lg">
+            </div>
         </div>
     </section>
 
-    <!-- About Us Section -->
-    <section id="about" class="py-16 bg-yellow-100">
-        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div>
-                <img src="https://i.imgur.com/W4XwP6M.png" alt="Kids playing with toys together" class="rounded-lg shadow-md hover-scale">
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-blue-700 mb-8 text-center">About KiddoLand</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1550722078-11541554f255?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Children Playing" class="rounded-lg shadow-md">
+                </div>
+                <div>
+                    <p class="text-gray-700 text-lg">At KiddoLand, we believe in the power of play. Our mission is to provide high-quality, safe, and engaging toys that foster creativity, learning, and joy in children. We carefully curate our selection to include toys that are not only fun but also promote cognitive development and social skills.</p>
+                    <p class="text-gray-700 text-lg mt-4">We are committed to providing excellent customer service and a seamless shopping experience.  Join us in creating a world of playful learning for your little ones!</p>
+                </div>
             </div>
-            <div>
-                <h2 class="text-3xl font-semibold text-yellow-700 mb-4">About Toytastic</h2>
-                <p class="text-gray-700">At Toytastic, we're passionate about play! We believe that toys are more than just objects; they're tools that spark imagination, foster creativity, and help children learn and grow. We're committed to providing high-quality, safe, and engaging toys that kids will love and parents can trust.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-yellow-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-blue-700 mb-8 text-center">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-2">Wide Selection of Toys</h3>
+                    <p class="text-gray-700">We offer a diverse range of toys, from classic favorites to the latest trends, ensuring there's something for every child.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-2">Educational Toys</h3>
+                    <p class="text-gray-700">Our educational toys are designed to promote learning through play, helping children develop essential skills in a fun and engaging way.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-2">Fast & Reliable Shipping</h3>
+                    <p class="text-gray-700">We provide fast and reliable shipping options to ensure your toys arrive quickly and safely.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Products Section -->
-    <section id="products" class="py-16 bg-yellow-50">
+    <section id="products" class="bg-white py-16">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-semibold text-yellow-700 text-center mb-8">Our Featured Toys</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <h2 class="text-3xl font-bold text-blue-700 mb-8 text-center">Our Featured Toys</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                <!-- Toy Card 1 -->
-                <div class="bg-white rounded-lg shadow-md p-4 hover-scale">
-                    <img src="https://i.imgur.com/J37m7Ua.png" alt="Wooden puzzle toy" class="rounded-md mb-2">
-                    <h3 class="text-xl font-semibold text-yellow-600">Wooden Shape Sorter</h3>
-                    <p class="text-gray-700">A classic educational toy that helps develop fine motor skills and shape recognition.</p>
-                    <a href="#" class="text-blue-500 hover:text-blue-700">Learn More</a>
+                <!-- Toy 1 -->
+                <div class="bg-yellow-50 rounded-lg shadow-md p-4 hover-scale">
+                    <img src="https://via.placeholder.com/300x200" alt="Toy 1" class="mb-4 rounded-md">
+                    <h3 class="text-xl font-semibold text-blue-600">Building Blocks</h3>
+                    <p class="text-gray-700">Classic building blocks for endless creativity.</p>
+                    <button class="mt-4 bg-blue-400 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+                        View Details
+                    </button>
                 </div>
 
-                <!-- Toy Card 2 -->
-                <div class="bg-white rounded-lg shadow-md p-4 hover-scale">
-                    <img src="https://i.imgur.com/94g5j86.png" alt="Soft plush toy" class="rounded-md mb-2">
-                    <h3 class="text-xl font-semibold text-yellow-600">Cuddle Bear Plush</h3>
-                    <p class="text-gray-700">A soft and cuddly bear perfect for snuggles and comfort.</p>
-                    <a href="#" class="text-blue-500 hover:text-blue-700">Learn More</a>
+                <!-- Toy 2 -->
+                <div class="bg-yellow-50 rounded-lg shadow-md p-4 hover-scale">
+                    <img src="https://via.placeholder.com/300x200" alt="Toy 2" class="mb-4 rounded-md">
+                    <h3 class="text-xl font-semibold text-blue-600">Stuffed Animals</h3>
+                    <p class="text-gray-700">Soft and cuddly stuffed animals for your little ones.</p>
+                    <button class="mt-4 bg-blue-400 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+                        View Details
+                    </button>
                 </div>
 
-                <!-- Toy Card 3 -->
-                <div class="bg-white rounded-lg shadow-md p-4 hover-scale">
-                    <img src="https://i.imgur.com/yW07Q9J.png" alt="Building blocks toy" class="rounded-md mb-2">
-                    <h3 class="text-xl font-semibold text-yellow-600">Construction Blocks Set</h3>
-                    <p class="text-gray-700">A versatile set of blocks for building endless creations and fostering creativity.</p>
-                    <a href="#" class="text-blue-500 hover:text-blue-700">Learn More</a>
+                <!-- Toy 3 -->
+                <div class="bg-yellow-50 rounded-lg shadow-md p-4 hover-scale">
+                    <img src="https://via.placeholder.com/300x200" alt="Toy 3" class="mb-4 rounded-md">
+                    <h3 class="text-xl font-semibold text-blue-600">Educational Games</h3>
+                    <p class="text-gray-700">Fun and educational games to stimulate young minds.</p>
+                    <button class="mt-4 bg-blue-400 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+                        View Details
+                    </button>
                 </div>
 
             </div>
@@ -101,35 +150,36 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-yellow-100">
+    <section id="contact" class="py-16 bg-blue-100">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-semibold text-yellow-700 text-center mb-8">Contact Us</h2>
-            <p class="text-lg text-gray-700 text-center">Have questions or need assistance? We'd love to hear from you!</p>
-            <div class="max-w-md mx-auto">
-                <form class="space-y-4">
-                    <div>
+            <h2 class="text-3xl font-semibold text-blue-700 mb-8 text-center">Contact Us</h2>
+            <div class="max-w-lg mx-auto">
+                <form>
+                    <div class="mb-4">
                         <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
                         <input type="text" id="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Name">
                     </div>
-                    <div>
+                    <div class="mb-4">
                         <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
                         <input type="email" id="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Email">
                     </div>
-                    <div>
+                    <div class="mb-6">
                         <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message:</label>
                         <textarea id="message" rows="4" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Message"></textarea>
                     </div>
-                    <div>
-                        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline hover-scale">Send Message</button>
+                    <div class="flex items-center justify-between">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                            Send Message
+                        </button>
                     </div>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer class="bg-yellow-500 py-4 text-center text-white">
-        &copy; 2024 Toytastic. All Rights Reserved.
+    <!-- Footer -->
+    <footer class="bg-blue-500 py-4 text-center text-white">
+        <p>&copy; 2024 KiddoLand. All rights reserved.</p>
     </footer>
 
 </body>
