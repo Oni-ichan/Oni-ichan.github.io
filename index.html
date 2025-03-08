@@ -1,170 +1,209 @@
 ```html
  <!DOCTYPE html>
  <html lang="en">
- 
-
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kids' Toyland - Fun and Educational Toys for Kids</title>
-  <meta name="description"
-  content="Discover a wide selection of fun and educational toys for kids of all ages. Shop our collection of toys designed to spark creativity and learning.">
-  <meta name="keywords"
-  content="toys, kids toys, educational toys, children's toys, toy store, best toys for kids, learning toys, creative toys, red and blue toys">
+  <title>Fun Time Toys - Toys for Kids!</title>
+  <meta name="description" content="Fun Time Toys offers a wide selection of toys for kids of all ages.  Find the perfect toy for your child today!">
+  <meta name="keywords" content="toys, kids, children, fun, games, educational toys, red, blue">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <style>
-  body {
-  font-family: 'Nunito', sans-serif;
+  /* Custom Styles for Smooth Scrolling and Hover Effects */
+  html {
+  scroll-behavior: smooth;
   }
  
 
-  /* Keyframes for animations */
-  @keyframes fadeInUp {
+  .hover-scale:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  }
+ 
+
+  .bg-gradient-custom {
+  background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 50%, #A855F7 100%); /* Example gradient */
+  }
+ 
+
+  /* Keyframe Animations */
+  @keyframes fadeIn {
   from {
   opacity: 0;
-  transform: translateY(20px);
   }
- 
-
   to {
   opacity: 1;
-  transform: translateY(0);
   }
   }
  
 
-  @keyframes slideInLeft {
-  from {
-  opacity: 0;
-  transform: translateX(-20px);
+  @keyframes slideInFromLeft {
+  0% {
+  transform: translateX(-100%);
   }
- 
-
-  to {
-  opacity: 1;
+  100% {
   transform: translateX(0);
   }
   }
  
 
-  /* Animation classes */
-  .animate-fade-in {
-  animation: fadeInUp 0.5s ease-out forwards;
+  @keyframes slideInFromRight {
+  0% {
+  transform: translateX(100%);
+  }
+  100% {
+  transform: translateX(0);
+  }
   }
  
 
-  .animate-slide-in {
-  animation: slideInLeft 0.5s ease-out forwards;
+  /* Apply Animations */
+  .animate-fade-in {
+  animation: fadeIn 1s ease-in-out;
+  }
+ 
+
+  .animate-slide-in-left {
+  animation: slideInFromLeft 0.7s ease-in-out;
+  }
+ 
+
+  .animate-slide-in-right {
+  animation: slideInFromRight 0.7s ease-in-out;
+  }
+ 
+
+  .category-item:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease-in-out;
   }
   </style>
  </head>
+ <body class="bg-blue-50 font-sans">
  
 
- <body class="bg-gray-50">
- 
-
-  <!-- Navigation Bar -->
-  <nav class="bg-white shadow-md py-4 animate-fade-in">
+  <!-- Header -->
+  <header class="bg-red-500 text-white py-4 shadow-md animate-fade-in">
   <div class="container mx-auto px-4 flex items-center justify-between">
-  <a href="#" class="text-2xl font-semibold text-red-600">
-  Kids' Toyland <span class="text-blue-600">Logo</span>
-  </a>
+  <a href="#" class="text-2xl font-bold hover-scale">Fun Time Toys</a>
+  <nav>
   <ul class="flex space-x-6">
-  <li><a href="#" class="text-gray-700 hover:text-red-500 animate-slide-in">Home</a></li>
-  <li><a href="#" class="text-gray-700 hover:text-red-500 animate-slide-in">About</a></li>
-  <li><a href="#" class="text-gray-700 hover:text-red-500 animate-slide-in">Services</a></li>
-  <li><a href="#" class="text-gray-700 hover:text-red-500 animate-slide-in">Contact</a></li>
+  <li><a href="#featured" class="hover:text-blue-200 hover-scale">Featured Toys</a></li>
+  <li><a href="#categories" class="hover:text-blue-200 hover-scale">Categories</a></li>
+  <li><a href="#about" class="hover:text-blue-200 hover-scale">About Us</a></li>
   </ul>
-  </div>
   </nav>
+  </div>
+  </header>
  
 
   <!-- Hero Section -->
-  <section class="bg-gradient-to-r from-red-100 to-blue-100 py-20">
-  <div class="container mx-auto px-4 text-center animate-fade-in">
-  <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-red-700 mb-6">
-  Unleash Your Child's Imagination!
-  </h1>
-  <p class="text-lg text-gray-700 mb-8">
-  Discover a world of fun and learning with our amazing collection of toys. We have something for every kid!
-  </p>
-  <a href="#"
-  class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full shadow-md transition duration-300 ease-in-out transform hover:scale-105">
-  Shop Now!
-  </a>
-  <img src="https://images.unsplash.com/photo-1585432332815-4d8d17f0e54f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-  alt="Kids Playing with Toys" class="mt-12 rounded-lg shadow-lg mx-auto max-w-3xl">
+  <section class="bg-blue-100 py-12 animate-slide-in-left">
+  <div class="container mx-auto px-4 text-center">
+  <h1 class="text-4xl font-extrabold text-red-600 mb-4">The Best Toys for Happy Kids!</h1>
+  <p class="text-gray-700 text-lg mb-8">Discover a world of fun and learning with our amazing selection of toys.</p>
+  <a href="#featured" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full hover-scale">Explore Toys</a>
   </div>
   </section>
  
 
-  <!-- Featured Products (Example) -->
-  <section class="py-16 bg-gray-50">
+  <!-- Featured Toys -->
+  <section id="featured" class="py-16">
   <div class="container mx-auto px-4">
-  <h2 class="text-3xl font-semibold text-red-700 text-center mb-8 animate-fade-in">Featured Toys</h2>
+  <h2 class="text-3xl font-semibold text-red-600 mb-8 text-center animate-fade-in">Featured Toys</h2>
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
- 
-
-  <!-- Product 1 -->
-  <div class="bg-white rounded-lg shadow-md overflow-hidden animate-fade-in">
-  <img src="https://images.unsplash.com/photo-1607522379027-494959144bb2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1973&q=80"
-  alt="Toy 1" class="w-full h-48 object-cover">
+  <!-- Toy 1 -->
+  <div class="bg-white rounded-lg shadow-md overflow-hidden hover-scale animate-slide-in-right">
+  <img src="https://placehold.co/600x400/4F46E5/ffffff?text=Toy+1" alt="Toy 1" class="w-full h-48 object-cover">
   <div class="p-4">
-  <h3 class="text-xl font-semibold text-gray-800 mb-2">Building Blocks Set</h3>
-  <p class="text-gray-600">A classic toy for developing creativity and problem-solving skills.</p>
-  <p class="text-red-600 font-bold mt-2">$29.99</p>
-  <a href="#"
-  class="inline-block bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded mt-4">Add to Cart</a>
+  <h3 class="text-xl font-semibold text-blue-700 mb-2">Awesome Action Figure</h3>
+  <p class="text-gray-600">A super cool action figure for endless adventures!</p>
+  <button class="bg-red-400 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full mt-4 hover-scale">Buy Now</button>
   </div>
   </div>
- 
-
-  <!-- Product 2 -->
-  <div class="bg-white rounded-lg shadow-md overflow-hidden animate-fade-in">
-  <img src="https://images.unsplash.com/photo-1567016545243-f3b55874403a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
-  alt="Toy 2" class="w-full h-48 object-cover">
+  <!-- Toy 2 -->
+  <div class="bg-white rounded-lg shadow-md overflow-hidden hover-scale animate-slide-in-left">
+  <img src="https://placehold.co/600x400/7C3AED/ffffff?text=Toy+2" alt="Toy 2" class="w-full h-48 object-cover">
   <div class="p-4">
-  <h3 class="text-xl font-semibold text-gray-800 mb-2">Remote Control Car</h3>
-  <p class="text-gray-600">A fun and exciting toy for kids who love speed and adventure.</p>
-  <p class="text-red-600 font-bold mt-2">$39.99</p>
-  <a href="#"
-  class="inline-block bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded mt-4">Add to Cart</a>
+  <h3 class="text-xl font-semibold text-blue-700 mb-2">Creative Building Blocks</h3>
+  <p class="text-gray-600">Unleash your creativity with these colorful building blocks.</p>
+  <button class="bg-red-400 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full mt-4 hover-scale">Buy Now</button>
   </div>
   </div>
- 
-
-  <!-- Product 3 -->
-  <div class="bg-white rounded-lg shadow-md overflow-hidden animate-fade-in">
-  <img src="https://images.unsplash.com/photo-1550345332-09e3ac9876fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
-  alt="Toy 3" class="w-full h-48 object-cover">
+  <!-- Toy 3 -->
+  <div class="bg-white rounded-lg shadow-md overflow-hidden hover-scale animate-slide-in-right">
+  <img src="https://placehold.co/600x400/A855F7/ffffff?text=Toy+3" alt="Toy 3" class="w-full h-48 object-cover">
   <div class="p-4">
-  <h3 class="text-xl font-semibold text-gray-800 mb-2">Stuffed Animal - Blue Bear</h3>
-  <p class="text-gray-600">A cuddly and comforting companion for kids of all ages.</p>
-  <p class="text-red-600 font-bold mt-2">$19.99</p>
-  <a href="#"
-  class="inline-block bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded mt-4">Add to Cart</a>
+  <h3 class="text-xl font-semibold text-blue-700 mb-2">Educational Puzzle Game</h3>
+  <p class="text-gray-600">A fun and educational puzzle game for developing minds.</p>
+  <button class="bg-red-400 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full mt-4 hover-scale">Buy Now</button>
   </div>
   </div>
+  </div>
+  </div>
+  </section>
  
 
+  <!-- Categories -->
+  <section id="categories" class="bg-blue-50 py-16">
+  <div class="container mx-auto px-4">
+  <h2 class="text-3xl font-semibold text-red-600 mb-8 text-center animate-fade-in">Toy Categories</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+  <!-- Category 1 -->
+  <div class="bg-white rounded-lg shadow-md p-6 text-center hover-scale category-item animate-slide-in-left">
+  <img src="https://placehold.co/200x150/4F46E5/ffffff?text=Action+Figures" alt="Action Figures" class="mx-auto mb-4">
+  <h3 class="text-xl font-semibold text-blue-700">Action Figures</h3>
+  <p class="text-gray-600">Explore our range of action figures.</p>
+  </div>
+  <!-- Category 2 -->
+  <div class="bg-white rounded-lg shadow-md p-6 text-center hover-scale category-item animate-slide-in-right">
+  <img src="https://placehold.co/200x150/7C3AED/ffffff?text=Building+Blocks" alt="Building Blocks" class="mx-auto mb-4">
+  <h3 class="text-xl font-semibold text-blue-700">Building Blocks</h3>
+  <p class="text-gray-600">Get creative with our building blocks.</p>
+  </div>
+  <!-- Category 3 -->
+  <div class="bg-white rounded-lg shadow-md p-6 text-center hover-scale category-item animate-slide-in-left">
+  <img src="https://placehold.co/200x150/A855F7/ffffff?text=Puzzles" alt="Puzzles" class="mx-auto mb-4">
+  <h3 class="text-xl font-semibold text-blue-700">Puzzles</h3>
+  <p class="text-gray-600">Challenge yourself with our puzzles.</p>
+  </div>
+  <!-- Category 4 -->
+  <div class="bg-white rounded-lg shadow-md p-6 text-center hover-scale category-item animate-slide-in-right">
+  <img src="https://placehold.co/200x150/4F46E5/ffffff?text=Dolls" alt="Dolls" class="mx-auto mb-4">
+  <h3 class="text-xl font-semibold text-blue-700">Dolls</h3>
+  <p class="text-gray-600">Find the perfect doll for your child.</p>
+  </div>
+  </div>
+  </div>
+  </section>
+ 
+
+  <!-- About Us -->
+  <section id="about" class="py-16 animate-fade-in">
+  <div class="container mx-auto px-4">
+  <h2 class="text-3xl font-semibold text-red-600 mb-8 text-center">About Us</h2>
+  <div class="bg-white rounded-lg shadow-md p-8">
+  <p class="text-gray-700 leading-relaxed mb-4">
+  Fun Time Toys is dedicated to providing high-quality, fun, and educational toys for children of all ages. We believe in the power of play and its importance in a child's development.
+  </p>
+  <p class="text-gray-700 leading-relaxed">
+  Our mission is to bring joy and learning to kids through our carefully curated selection of toys. We are committed to safety and quality, ensuring that all our products meet the highest standards.
+  </p>
   </div>
   </div>
   </section>
  
 
   <!-- Footer -->
-  <footer class="bg-red-700 text-white py-8 animate-fade-in">
+  <footer class="bg-red-500 text-white py-4 animate-fade-in">
   <div class="container mx-auto px-4 text-center">
-  <p>&copy; 2024 Kids' Toyland. All rights reserved.</p>
+  <p>&copy; 2024 Fun Time Toys. All rights reserved.</p>
   </div>
   </footer>
  
 
  </body>
- 
-
  </html>
  ```
+
