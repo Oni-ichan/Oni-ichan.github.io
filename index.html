@@ -6,40 +6,24 @@
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Awesome Toys for Awesome Kids</title>
-  <meta name="description"
-  content="Find the perfect toys for your kids! We offer a wide selection of fun, educational, and engaging toys for all ages.">
- 
-
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Awesome Toys for Awesome Kids">
-  <meta property="og:description"
-  content="Find the perfect toys for your kids! We offer a wide selection of fun, educational, and engaging toys for all ages.">
-  <meta property="og:image" content="URL_TO_YOUR_LOGO_OR_FEATURED_IMAGE">
-  <meta property="og:url" content="URL_TO_YOUR_WEBSITE">
-  <meta property="og:type" content="website">
- 
-
+  <title>Funville Toys - Toys for Kids</title>
+  <meta name="description" content="Funville Toys: A wide selection of toys for kids of all ages. Find educational toys, action figures, dolls, and more! Shop now!">
+  <meta name="keywords" content="toys, kids toys, educational toys, action figures, dolls, toy store, Funville Toys">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
   <style>
-  /* Hover effects */
-  .hover-scale:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
+  body {
+  font-family: 'Nunito', sans-serif;
   }
  
 
-  .hover-shadow:hover {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  transition: box-shadow 0.3s ease;
-  }
- 
-
-  /* Keyframe animations */
-  @keyframes fadeIn {
+  /* Keyframes for animations */
+  @keyframes fadeInUp {
   from {
   opacity: 0;
-  transform: translateY(-20px);
+  transform: translateY(20px);
   }
  
 
@@ -50,130 +34,200 @@
   }
  
 
-  @keyframes slideInLeft {
+  @keyframes fadeIn {
   from {
-  transform: translateX(-100%);
+  opacity: 0;
   }
  
 
   to {
-  transform: translateX(0);
+  opacity: 1;
   }
   }
  
 
-  @keyframes slideInRight {
-  from {
-  transform: translateX(100%);
+  @keyframes colorChange {
+  0% {
+  color: green;
   }
  
 
-  to {
-  transform: translateX(0);
+  50% {
+  color: blue;
+  }
+ 
+
+  100% {
+  color: green;
   }
   }
  
 
   /* Apply animations */
-  .fade-in {
-  animation: fadeIn 1s ease forwards;
+  .animate-fade-in-up {
+  animation: fadeInUp 1s ease-out;
   }
  
 
-  .slide-in-left {
-  animation: slideInLeft 1s ease forwards;
+  .animate-fade-in {
+  animation: fadeIn 1s ease-out;
   }
  
 
-  .slide-in-right {
-  animation: slideInRight 1s ease forwards;
+  .animate-color-change {
+  animation: colorChange 5s linear infinite;
+  }
+ 
+
+  .hover-scale:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  }
+ 
+
+  .shake:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  }
+ 
+
+  @keyframes shake {
+  0% {
+  transform: translate(1px, 1px) rotate(0deg);
+  }
+ 
+
+  10% {
+  transform: translate(-1px, -2px) rotate(-1deg);
+  }
+ 
+
+  20% {
+  transform: translate(-3px, 0px) rotate(1deg);
+  }
+ 
+
+  30% {
+  transform: translate(3px, 2px) rotate(0deg);
+  }
+ 
+
+  40% {
+  transform: translate(1px, -1px) rotate(1deg);
+  }
+ 
+
+  50% {
+  transform: translate(-1px, 2px) rotate(-1deg);
+  }
+ 
+
+  60% {
+  transform: translate(-3px, 1px) rotate(0deg);
+  }
+ 
+
+  70% {
+  transform: translate(3px, 1px) rotate(-1deg);
+  }
+ 
+
+  80% {
+  transform: translate(-1px, -1px) rotate(1deg);
+  }
+ 
+
+  90% {
+  transform: translate(1px, 2px) rotate(0deg);
+  }
+ 
+
+  100% {
+  transform: translate(1px, -2px) rotate(-1deg);
+  }
   }
   </style>
  </head>
  
 
- <body class="bg-gray-50 font-sans">
+ <body class="bg-green-50">
  
 
-  <!-- Header -->
-  <header class="bg-red-600 text-white py-4 shadow-md">
-  <div class="container mx-auto px-4">
-  <div class="flex items-center justify-between">
-  <a href="/" class="text-2xl font-bold hover:text-red-200">Awesome Toys</a>
-  <nav>
-  <ul class="flex space-x-6">
-  <li><a href="/" class="hover:text-red-200">Home</a></li>
-  <li><a href="#services" class="hover:text-red-200">Services</a></li>
-  <li><a href="#about" class="hover:text-red-200">About Us</a></li>
-  <li><a href="#contact" class="hover:text-red-200">Contact</a></li>
-  </ul>
+  <!-- Navigation Bar -->
+  <nav class="bg-white shadow-md">
+  <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+  <div class="flex items-center">
+  <a href="#" class="font-bold text-xl text-green-600 animate-color-change">Funville Toys</a>
+  <!-- Logo Placeholder -->
+  </div>
+  <div class="hidden md:flex space-x-6">
+  <a href="#" class="text-gray-700 hover:text-green-500 hover-scale">Home</a>
+  <a href="#about" class="text-gray-700 hover:text-green-500 hover-scale">About</a>
+  <a href="#services" class="text-gray-700 hover:text-green-500 hover-scale">Services</a>
+  <a href="#contact" class="text-gray-700 hover:text-green-500 hover-scale">Contact</a>
+  </div>
+  <div class="md:hidden">
+  <button id="mobile-menu-button" class="text-gray-700 hover:text-green-500 focus:outline-none focus:ring-2 focus:ring-green-500 hover-scale">
+  <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+  </svg>
+  </button>
+  </div>
+  </div>
+ 
+
+  <!-- Mobile Menu (Hidden by default) -->
+  <div class="md:hidden bg-gray-100" id="mobile-menu">
+  <a href="#" class="block py-2 px-4 text-gray-700 hover:bg-green-100 hover:text-green-500 hover-scale">Home</a>
+  <a href="#about" class="block py-2 px-4 text-gray-700 hover:bg-green-100 hover:text-green-500 hover-scale">About</a>
+  <a href="#services" class="block py-2 px-4 text-gray-700 hover:bg-green-100 hover:text-green-500 hover-scale">Services</a>
+  <a href="#contact" class="block py-2 px-4 text-gray-700 hover:bg-green-100 hover:text-green-500 hover-scale">Contact</a>
+  </div>
   </nav>
-  </div>
-  </div>
-  </header>
  
 
   <!-- Hero Section -->
-  <section class="bg-blue-100 py-16">
-  <div class="container mx-auto px-4">
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-  <div class="fade-in">
-  <h1 class="text-4xl font-extrabold text-blue-700 mb-4">The Best Toys for Happy Kids!</h1>
-  <p class="text-gray-700 text-lg mb-6">We believe that play is essential for a child's development. That's why
-  we offer a wide range of high-quality, safe, and fun toys that will spark their imagination and creativity.</p>
-  <a href="#services"
-  class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline hover-scale">Explore
-  Our Toys</a>
+  <section class="py-12 md:py-24 bg-green-50 animate-fade-in-up">
+  <div class="container mx-auto px-4 text-center">
+  <h1 class="text-4xl md:text-5xl font-bold text-green-700 mb-6">Unleash Your Child's Imagination!</h1>
+  <p class="text-lg text-gray-700 mb-8">Discover a world of fun and learning with our amazing collection of toys. We have something for every kid!</p>
+  <img src="https://images.unsplash.com/photo-1575242575415-f15475192701?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Kids playing with toys" class="rounded-lg shadow-md mx-auto mb-8 hover-scale" style="max-width: 800px;">
+  <a href="#" class="bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full inline-block transition duration-300 ease-in-out transform hover:scale-105 shake">Shop Now!</a>
   </div>
-  <div class="slide-in-right">
-  <img src="https://source.unsplash.com/500x400/?toys" alt="Toys" class="rounded-lg shadow-md hover-shadow">
+  </section>
+ 
+
+  <!-- About Section -->
+  <section id="about" class="py-12 md:py-24 bg-white animate-fade-in-up">
+  <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+  <div>
+  <h2 class="text-3xl font-bold text-green-700 mb-4">About Funville Toys</h2>
+  <p class="text-gray-700 mb-6">At Funville Toys, we believe in the power of play. We're dedicated to providing high-quality, safe, and engaging toys that spark creativity and learning in children of all ages. Our mission is to make playtime fun and enriching!</p>
+  <p class="text-gray-700">We carefully select our toys from trusted brands and ensure they meet the highest safety standards. We're passionate about helping kids grow and develop through play.</p>
   </div>
+  <div>
+  <img src="https://images.unsplash.com/photo-1550722317-bc57b18e14a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Toy Store" class="rounded-lg shadow-md hover-scale">
   </div>
   </div>
   </section>
  
 
   <!-- Services Section -->
-  <section id="services" class="py-12 bg-gray-100">
-  <div class="container mx-auto px-4">
-  <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Our Awesome Toy Selection</h2>
+  <section id="services" class="py-12 md:py-24 bg-green-50 animate-fade-in-up">
+  <div class="container mx-auto px-4 text-center">
+  <h2 class="text-3xl font-bold text-green-700 mb-8">Our Services</h2>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-  <!-- Service 1 -->
-  <div class="bg-white rounded-lg shadow-md p-6 hover-shadow hover-scale">
-  <h3 class="text-xl font-semibold text-red-600 mb-2">Educational Toys</h3>
-  <p class="text-gray-700">Help your child learn and grow with our selection of educational toys, including puzzles,
-  building blocks, and science kits.</p>
+  <div class="bg-white rounded-lg shadow-md p-6 hover-scale">
+  <h3 class="text-xl font-semibold text-green-600 mb-2">Wide Selection</h3>
+  <p class="text-gray-700">We offer a huge variety of toys, from classic favorites to the latest trends.</p>
   </div>
-  <!-- Service 2 -->
-  <div class="bg-white rounded-lg shadow-md p-6 hover-shadow hover-scale">
-  <h3 class="text-xl font-semibold text-red-600 mb-2">Action Figures & Dolls</h3>
-  <p class="text-gray-700">Fuel their imagination with our wide range of action figures and dolls, featuring popular
-  characters and imaginative designs.</p>
+  <div class="bg-white rounded-lg shadow-md p-6 hover-scale">
+  <h3 class="text-xl font-semibold text-green-600 mb-2">Safe & High-Quality</h3>
+  <p class="text-gray-700">All our toys are carefully selected for safety and durability.</p>
   </div>
-  <!-- Service 3 -->
-  <div class="bg-white rounded-lg shadow-md p-6 hover-shadow hover-scale">
-  <h3 class="text-xl font-semibold text-red-600 mb-2">Outdoor Toys</h3>
-  <p class="text-gray-700">Encourage active play with our selection of outdoor toys, including bikes, scooters, and
-  sports equipment.</p>
-  </div>
-  </div>
-  </div>
-  </section>
- 
-
-  <!-- About Us Section -->
-  <section id="about" class="py-12">
-  <div class="container mx-auto px-4">
-  <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">About Awesome Toys</h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-  <div class="slide-in-left">
-  <img src="https://source.unsplash.com/500x400/?kids,playing" alt="Kids Playing"
-  class="rounded-lg shadow-md hover-shadow">
-  </div>
-  <div class="fade-in">
-  <p class="text-gray-700 text-lg">Awesome Toys is dedicated to providing high-quality, safe, and fun toys for kids of
-  all ages. We believe in the power of play and its importance in a child's development. Our mission is to inspire
-  creativity, learning, and joy through our carefully curated selection of toys.</p>
+  <div class="bg-white rounded-lg shadow-md p-6 hover-scale">
+  <h3 class="text-xl font-semibold text-green-600 mb-2">Expert Advice</h3>
+  <p class="text-gray-700">Our friendly staff can help you find the perfect toy for any child.</p>
   </div>
   </div>
   </div>
@@ -181,46 +235,53 @@
  
 
   <!-- Contact Section -->
-  <section id="contact" class="py-12 bg-blue-100">
+  <section id="contact" class="py-12 md:py-24 bg-white animate-fade-in-up">
   <div class="container mx-auto px-4">
-  <h2 class="text-3xl font-bold text-blue-700 text-center mb-8">Contact Us</h2>
-  <div class="max-w-md mx-auto">
-  <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+  <h2 class="text-3xl font-bold text-green-700 mb-8 text-center">Contact Us</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+  <div>
+  <p class="text-gray-700 mb-4">Have questions? We'd love to hear from you! Fill out the form below or give us a call.</p>
+  <p class="text-gray-700"><strong>Phone:</strong> (555) 123-4567</p>
+  <p class="text-gray-700"><strong>Email:</strong> info@funvilletoys.com</p>
+  <p class="text-gray-700"><strong>Address:</strong> 123 Main Street, Anytown, USA</p>
+  </div>
+  <div>
+  <form>
   <div class="mb-4">
-  <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name</label>
-  <input
-  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline hover-scale"
-  id="name" type="text" placeholder="Your Name">
+  <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
+  <input type="text" id="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline hover-scale" placeholder="Your Name">
   </div>
   <div class="mb-4">
-  <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
-  <input
-  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline hover-scale"
-  id="email" type="email" placeholder="Your Email">
+  <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+  <input type="email" id="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline hover-scale" placeholder="Your Email">
   </div>
   <div class="mb-6">
-  <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Message</label>
-  <textarea
-  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline hover-scale"
-  id="message" placeholder="Your Message" rows="4"></textarea>
+  <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message:</label>
+  <textarea id="message" rows="4" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline hover-scale" placeholder="Your Message"></textarea>
   </div>
-  <div class="flex items-center justify-between">
-  <button
-  class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline hover-scale"
-  type="button">
-  Send Message
-  </button>
-  </div>
+  <button type="submit" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline hover-scale shake">Send Message</button>
   </form>
+  </div>
   </div>
   </div>
   </section>
  
 
   <!-- Footer -->
-  <footer class="bg-red-600 text-white py-4 text-center">
-  <p>&copy; 2024 Awesome Toys. All rights reserved.</p>
+  <footer class="bg-gray-800 py-4 text-white text-center animate-fade-in">
+  <p>&copy; 2024 Funville Toys. All rights reserved.</p>
   </footer>
+ 
+
+  <script>
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+ 
+
+  mobileMenuButton.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+  });
+  </script>
  
 
  </body>
